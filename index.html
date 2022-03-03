@@ -6,20 +6,32 @@
     <title>Loving it with Gucci</title>
     <style>
         /* ARTICLE */
+        * {
+            padding: 0;
+            margin: 0;
+        }
         body {
             font-family: sans-serif;
             font-size: 22px;
             background-color: antiquewhite;
         }
-        nav {
-            background-color: chocolate;
+        header {
+            background-color: lavender;
             font-weight: bold;
-            color: gold;
+            color: lightseagreen;
+            padding: 30px 10px;
+            margin-bottom: 10px;
+            height: 80px;
+        
 
+        }
+    
+        h1,h3,h4 {
+            color: lightseagreen;
         }
         h1 {
             font-family: sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             font-style: italic;
             text-transform: uppercase;
         }
@@ -30,49 +42,103 @@
             text-align: center;
 
         }
+        h3 {
+            font-size: 30px;
+            /* color: lightseagreen; */
+            text-align: center;
+        }
         
         
         h4 {
             font-family: sans-serif;
             text-transform: uppercase;
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
+            /* color: lightseagreen; */
         }
         p {
             font-family: sans-serif;
             line-height: 1.5;
+            font-size: 22px;
+            margin-bottom: 15px;
             
 
+            }
+            li {
+                font-family: sans-serif;
+                font-size: 18px;
+                margin-bottom: 15px;
             }
             article {
                 border: 2px solid black;
                 margin-bottom: 10px;
             }
             aside {
-                border: 2px solid blue;
+                /* border: 2px solid lightseagreen; */
                 margin-bottom: 10px;
+                /* border-top: 4px; */
+                /* background-color: lightseagreen; */
+                width: 500px;
+                background-color: linen;
+                border-top: 5px solid lightseagreen;
+                border-bottom: 5px solid lightseagreen;
+
             } 
+            ol,ul {
+                margin-left: 30px;
+            }
             .author {
                 width: fit-content;
                 height: 80px;
                 margin-top: 5px;
             } 
             .author-1 {
+                font-style: italic;
+                font-size: 14px;
 
             }
 
 
             /* ASIDE */
+        ol li {
+            line-height: 1,5;
+        }
+            ul li {
+                /* list-style: none; */
+            }
             .container {
                 font-family: sans-serif;
                 background-color: darkblue;
             }
-        .guccio gucci {
+            .relative-info {
+                border-top: 4px;
+                /* color: darkcyan; */
+                border-bottom: 4px;
+                /* color: darkcyan; */
+                list-style: none;
+            } 
+            li:last-child{
+                margin-bottom: 0;
+            }
+            li:first-child {
+font-weight: bold;
+            }
+            li:last-child {
+                font-style: italic;
+            }
+            li:nth-child(2) {
+                /* color: lightseagreen; */
+            }
+        .guccio-gucci {
             font-family: sans-serif;
             font-size: 35px;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             text-align: center;
+            color: lightseagreen;
 
+            }
+            .tables {
+                width: 500px;
             }
             .time {
                 border: 3px solid black;
@@ -93,7 +159,11 @@
                 font-size: 30px;
                 color: aliceblue;
                 /* margin-right: 20px; */
-            } 
+            }
+             .gucci-2 {
+                 width: 30%;
+                 height: auto;
+             }
             .gucci {
                 text-align: center;
                 color: cornflowerblue;
@@ -109,16 +179,48 @@
             .welcome {
                 border: 3px solid black ;
                 padding: 33px;
+                /* fill: aqua; */
                 margin-bottom: 2px;
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 20px;
                 color: darkturquoise;
             }
+            #contact {
+                font-size: 16px;
+                font-style: italic;
+            }
+            /* STYLING LINKS*/
+            a:link {
+                color: lightseagreen;
+                text-decoration: none;
+            }
+            a:visited {
+                color: lightseagreen;
+
+            }
+            a:hover {
+                color: orangered;
+                font-weight: bold;
+                text-decoration: underline orangered;
+            }
+            a:active {
+                color: black;
+                font-style: italic;
+                
+            }
+        
+            
+            
+
+
+
+
             /* .row {
                 border: 3px solid black ;
                 padding: 30px; 
             }
+            
   */
                 
         
@@ -128,11 +230,14 @@
 </head>
 <body>
     <header>
+        <h1>Inside Guide To GFW</h1>
 <nav> 
- <h1>Inside Guide To GFW</h1>
-        <li><a href="blog"></a>BLOG</li>
-        <li><a href="flex"></a>FLEX</li>
-        <li><a href="grid"></a>GRID</li>
+ 
+        
+            <a href="blog">BLOG</a>
+        
+        <a href="flex">FLEX</a>
+        <a href="grid">GRID</a>
     </nav>
 </header>
 <article>
@@ -141,28 +246,58 @@
         <img class="author" src="https://assets.vogue.com/photos/5fb24c09e06153f6bdd998a7/master/w_1600,c_limit/00006-Gucci-SS-21.jpg" width="350" height="450">
     </a>
     <p class="author-1">Posted by<strong> Alex Tudor</strong> 2022 12 12</p>
-    <h3 class="guccio gucci">Guccio Gucci | 1 day  ago</h3>
+    <h2 class="guccio-gucci">Guccio Gucci | 1 day  ago</h2>
    
-    <img src="https://assets.vogue.com/photos/5c7dad889c516c2d54e3a1a0/6:7/w_960,c_limit/GettyImages-1131005686.jpg" width="300" height="350">
+    <img class="gucci-2" src="https://assets.vogue.com/photos/5c7dad889c516c2d54e3a1a0/6:7/w_960,c_limit/GettyImages-1131005686.jpg" width="300" height="350">
     <p>
-        <a href="https://en.wikipedia.org/wiki/english/gucci_fashion target="blank">GucciFashion</a>It's quite certain that when Guccio Gucci started out, he never dreamed that his small luggage company would grow to one carrying such cultural significance.<br> But since Gucci was founded in Florence in 1921, the company has built a catalog of genuinely iconic trademarks.<br> The interlocking GG logo; the bar-and-bit belt buckle; the bamboo-handle handbag; the omnipresent loafer—all of them have helped the brand penetrate mainstream culture like no other Italian label in history</p>
-    <h2>Getting Tickets</h2>
-    <img src="https://assets.vogue.com/photos/618219832d56ff9155139e2f/master/w_1600,c_limit/Look_009.jpg" width="300" height="500">
+        <a href="https://en.wikipedia.org/wiki/english/gucci_fashion target="blank">GucciFashion</a>It's quite certain that when<em> Guccio Gucci </em> started out, he never dreamed that his small luggage company would grow to one carrying such cultural significance.<br> But since Gucci was founded in Florence in 1921, the company has built a catalog of genuinely iconic trademarks.<br> The interlocking GG logo; the bar-and-bit belt buckle; the bamboo-handle handbag; the omnipresent loafer—all of them have helped the brand penetrate mainstream culture like no other Italian label in history</p>
+    <h3>Getting Tickets</h3>
+    <!-- <img src="https://assets.vogue.com/photos/618219832d56ff9155139e2f/master/w_1600,c_limit/Look_009.jpg" width="300" height="500"> -->
     <p>The groundwork for the company's epic expansion was laid under the leadership of Guccio's eldest son, Aldo.<br> A flamboyant businessman, he transformed the business into the accessories destination of choice for Europe's emerging jet set.<br> By the end of the 1960s, everyone from Queen Elizabeth II to Elizabeth Taylor was a patron.</p>
-    <h2>Dress Code</h2>
-    <img src="https://assets.vogue.com/photos/618219832ea3b922ce8ecabe/master/w_1600,c_limit/Look_007.jpg" width="300" height="500">
+    <h3>Dress Code</h3>
+    <p>GUCCi is made up of three parts</p>
+    <ol>
+        <li class="first-child">Suits with fur-lined</li>
+        <li>Guccio-Kaks</li>
+        <li>Obssession silhouettes</li>
+    </ol>
+    <!-- <img src="https://assets.vogue.com/photos/618219832ea3b922ce8ecabe/master/w_1600,c_limit/Look_007.jpg" width="300" height="500"> -->
     <p>In keeping with the father-son tradition, Aldo's son Paolo ushered in Gucci's next great era, in the late 1960s, with the introduction of clothing.<br> By the early 70s, the lean silhouettes, fur-lined coats, and shiny satin lapels we think of today as Gucci hallmarks began to appear.</p>
-    
-    <h4>Relative Content</h4>
+    <h4>70s Guccio Young</h4>
+    <p>Guccio Young fgrhjdkbc,slsieoeslmx</p>
     <ul>
-        <li>Gucci Shows</li>
-        <li>Suits</li>
-        <li>Bags</li>
-        <li>Gucci Jeans</li>
+        <li>Fur-lined</li> 
+        <li>Silhouettes</li>
+        <li>Skinny Jeans</li>
+        <li>Shoes</li>
     </ul>
-</article>
+    </article> 
+    <aside>
+    <h4>Relative Content</h4>
+    <ul class="relative-info">
+        
+        
+        <li class="first-child">
+            <a href="#">
+                <img src="./images/gucci shows.jpeg" width="130" height="75">Gucci Shows</a>
+            <p>By Jacks Curls</p>
+            </li>
+        <li>
+            <a href="#">
+                <img src="./images/gucci suits.jpeg" width="80" height="120">Suits</a>
+        <p>By James Hubs</p></li>
+        <li><a href="#"><img src="./images/guci bags.jpeg" width="80" height="80">Bags</a>
+        <p>By Moon Wii</p></li>
+        <li class="last-child">
+            <a href="#"><img src="./images/gucci shoes.jpeg" width="80" height="80">Gucci Shoes
+                
+            </a>
+            <p>By James Lucio</p>
+        </li>
+    </ul></aside>
+
     
-<aside>
+<section class="tables">
 <!-- 
     <header>
         <h1>Gucci showcase</h1>
@@ -222,7 +357,7 @@
 
         </table>
     </div>
-    </aside>
+    </section>
     <footer id="contact">
         <p><strong>Email</strong>:falidumusa@gmail.com |<strong>Phone</strong>:07044258421 | <strong>Address</strong>:8764th st Milan Italy 10001</p> 
     </footer>
